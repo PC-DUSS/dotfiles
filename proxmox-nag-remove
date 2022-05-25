@@ -1,0 +1,3 @@
+To remove the nag welcome message in proxmox-ve, navigate to /usr/share/javascript/proxmox-widget-toolkit/
+and open proxmoxlib.jas in a text editor. Search for "check_command:". Go down a bit more until you reach
+" if (...) { " and change the contents of the if clause "(...)" to "false". Save the file and exit. Reboot
