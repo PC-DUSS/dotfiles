@@ -22,6 +22,8 @@
 (tool-bar-mode -1)
 ;; No splash screen
 (setq inhibit-splash-screen t)
+;; Overwrite highlighted text
+(delete-selection-mode 1)
 
 ;; custom themes directory
 (add-to-list 'custom-theme-load-path "~/.emacs-default.d/themes")
